@@ -10,8 +10,8 @@ public class TestDAO {
 	public static void main(String[] args) {
 
 		BordersDAO dao = new BordersDAO();
-
-		System.out.println("Lista di tutte le nazioni:");
-		List<Country> countries = dao.loadAllCountries();
+		List<Border> list=dao.getCountryPairs(1945);
+		System.out.println("Lista di tutti i "+list.size()+"confini:\n"+list);
+//		List<Country> countries = dao.loadAllCountries();
 	}
 }
